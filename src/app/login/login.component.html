@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <div class="text-center">
+        <h2 style="font-weight: 500; font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 5px;">Login</h2>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate class="d-flex-center">
+          <div class="example-container">
+            <div>
+              <mat-form-field>
+                <input matInput placeholder="Email" formControlName="userEmail" required="true">
+                <mat-icon matSuffix>mail_outline</mat-icon>
+                <mat-error
+                  *ngIf="!loginForm.get('userEmail')?.errors?.['required'] && (loginForm.get('userEmail')?.errors?.['pattern'])">
+                  Please enter a valid email address
+                </mat-error>
+                <mat-error
+                  *ngIf="loginForm.get('userEmail')?.invalid && (loginForm.get('userEmail')?.dirty || loginForm.get('userEmail')?.touched) && loginForm.get('userEmail')?.errors?.['required']">
+                  Email is required
+                </mat-error>
+              </mat-form-field>
+            </div>
+            <div class="mt-top-2">
+              <mat-form-field>
+                <input matInput [type]="flag ? 'text' : 'password'" placeholder="Password" formControlName="userPassword">
+                <mat-icon (click)="flag=!flag" matSuffix>{{ flag ? 'visibility' : 'visibility_off' }}</mat-icon>
+                <mat-error *ngIf="!loginForm.get('userPassword')?.errors?.['minLength'] &&
+                loginForm.get('userPassword').value.length !== 0">
+                </mat-error>
+                <mat-error *ngIf="loginForm.get('userPassword')?.invalid && (loginForm.get('userPassword')?.dirty || loginForm.get('userPassword')?.touched)
+                     && loginForm.get('userPassword')?.errors?.['required']">
+                  Password is required
+                </mat-error>
+              </mat-form-field>
+            </div>
+            <mat-error *ngIf="badCredentials">
+              The username or password is incorrect
+            </mat-error>
+            <div class="mt-top">
+              <button class="btn1" [disabled]="!loginForm.valid" mat-raised-button color="primary" mat-button>Log
+                In</button>
+            </div>
+          </div>
+        </form>
+        <br>
+        <div class="text-center">
+          <p><a [routerLink]="['/resetPassword']">Forgot Password ?</a></p>
+          <p>Don't have an account <a [routerLink]="['/register']">register</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

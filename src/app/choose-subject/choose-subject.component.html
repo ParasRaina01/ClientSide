@@ -1,0 +1,23 @@
+<app-navbar>
+
+</app-navbar>
+<div class="container ">
+  <div class="allTopics">
+    <form>
+      <mat-form-field appearance="fill" required>
+        <mat-label>Choose Subject </mat-label>
+        <mat-select [(ngModel)]="selectedSubject" name="food" required>
+          <mat-option *ngFor="let subject of topics" [value]="subject.topicId">{{subject.topicName}}
+
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </form>
+
+  </div>
+  <!-- <h4>Select Your Subject</h4> -->
+  <img class="img" src="../../assets/quiz.jpg" alt="rank.jpg" style="justify-content: center;">
+
+  <button class="btn1" [disabled]="!selectedSubject" (click)="goToQuiz()">Start Quiz</button>
+
+</div>

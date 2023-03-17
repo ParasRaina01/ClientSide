@@ -1,0 +1,30 @@
+<h1 mat-dialog-title>Profile</h1>
+<div mat-dialog-content>
+    <mat-form-field appearance="outline">
+        <mat-label>User Name</mat-label>
+        <input matInput placeholder="User Name">
+        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput placeholder="Email">
+        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Phone No.</mat-label>
+        <input type="tel" matInput placeholder="Phone No.">
+        <!-- <mat-icon>settings_phone</mat-icon> -->
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>DOB</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+</div>
+<div mat-dialog-actions [align]="'end'">
+
+    <button mat-raised-button color="warm"  mat-dialog-close>Edit</button>
+    <button mat-raised-button color="primary"  mat-dialog-close>Save</button>
+    <button mat-raised-button color="warn"  mat-dialog-close (click)="onLogOut()">Logout</button>
+</div>

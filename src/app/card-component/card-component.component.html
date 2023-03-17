@@ -1,0 +1,27 @@
+<!-- <p>card-component works!</p> -->
+<!-- <h3>Question</h3> -->
+<app-navbar [logoutActive]="logoutActive">
+
+</app-navbar>
+<div class="container">
+  <mat-card class="example-card col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2 marginTop">
+    <!-- <h4>1.</h4> -->
+
+    <mat-card-content>
+      <h4>Question No. {{counter+1}}</h4>
+      <p>{{Question}}</p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="example-card col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2 leftMargin">
+
+    <form [formGroup]="quizForm" (ngSubmit)="onSubmit()">
+      <div class="radio abcd" *ngFor="let option of alloption; let i=index">
+        <label>
+          <input type="radio" formControlName="option" [value]="i+1">{{ option }}
+        </label>
+      </div>
+      <button class="btn1 btn-primary abcde" type="submit" [disabled]="!quizForm.value.option"> {{buttonName}}</button>
+    </form>
+  </mat-card>
+</div>

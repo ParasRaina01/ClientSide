@@ -1,0 +1,75 @@
+/* .container{
+    border: 10px 10px solid;
+    background-color: cadetblue;
+    border-radius: 10px;
+    height: 100vh;
+    width: 150vh;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 15px;
+    padding-right: 200px;
+    padding-right: 200px;
+    background-color: red;
+    height: 100vh;
+    width: 100vh;
+} */
+.container {
+}
+.marginTop {
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background-color: rgb(126, 160, 160);
+}
+.example-card {
+  font: size 4rem;
+  width: 100%;
+  /* max-width: 400px; */
+
+  /* background-color: blue; */
+}
+.abcd {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* .abc{
+    text-align: end;
+    margin-top: 10px;
+} */
+.abcde {
+  /* float: right; */
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  /* margin-right: 150px; */
+}
+.btn1 {
+  border-radius: 20px;
+  width: 150px;
+  background: rgb(64, 61, 235);
+  /* padding: 10px; */
+  text-align: center;
+  color: white;
+  /* display: flex; */
+  /* align-items: center; */
+  margin-left: 8px;
+  margin-top: 5px;
+  justify-content: space-around;
+  cursor: pointer;
+}
+label
+{
+  margin-left: 8px;
+  margin-right: 8px;
+}
+label button{
+  padding-right: 10px;
+}
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin-right: 5px;
+  padding-right: 5px;
+}

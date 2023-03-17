@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+/* .container{
+    margin-top: 50 px;
+} */
+
+body{
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

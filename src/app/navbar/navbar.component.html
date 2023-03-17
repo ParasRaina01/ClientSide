@@ -1,0 +1,21 @@
+<div>
+    <mat-toolbar>
+        <div>
+            <span>Quiz Application</span>
+        </div> <span class="example-spacer"></span>
+        <div class="loginbtn">
+            <!-- <div class="btn1" *ngIf="logoutActive else other">{{authService.userEmail}} </div> -->
+            <div *ngIf="!logoutActive else other">
+                <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" (click)="userDashBoard()">
+                    <mat-icon>account_circle</mat-icon>
+                </button>
+            </div>
+
+            <ng-template #other>
+                <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+                    <mat-icon>av_timer</mat-icon>
+                </button>
+            </ng-template>
+        </div>
+    </mat-toolbar>
+</div>

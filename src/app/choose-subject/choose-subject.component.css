@@ -1,0 +1,97 @@
+/* .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: bisque;
+     background-color: rgb(126, 160, 160);
+    align-items: center;
+    text-align: center;
+} */
+
+.container {
+  display: flex;
+  margin-top: 1.5rem;
+  justify-content: center;
+  box-shadow: 2px;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.container img{
+  overflow: hidden;
+}
+h4 {
+  /* margin-top: 10px; */
+  /* margin-bottom: 20px; */
+  height: 50px;
+  padding-top: 10px;
+  /* font-weight: 900; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-underline-offset: auto;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 70px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button[_ngcontent-mga-c87],
+input[_ngcontent-mga-c87],
+optgroup[_ngcontent-mga-c87],
+select[_ngcontent-mga-c87],
+textarea[_ngcontent-mga-c87] {
+  color: inherit;
+  font: inherit;
+  margin: 60px;
+}
+.btn {
+  color: white;
+}
+
+.heading img {
+  margin-top: 30px;
+}
+.btn1 {
+  border-radius: 20px;
+  width: 150px;
+  background: rgb(64, 61, 235);
+  /* padding: 10px; */
+  text-align: center;
+  color: white;
+  /* display: flex; */
+  /* align-items: center; */
+  margin-top: 5px;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.btn3 {
+  border-radius: 20px;
+  width: 150px;
+  background: rgb(64, 61, 235);
+  /* padding: 10px; */
+  text-align: center;
+  color: white;
+  /* display: flex; */
+  /* align-items: center; */
+  margin-top: 5px;
+  justify-content: space-around;
+  /* cursor: pointer; */
+}
+a.btn1:hover {
+  cursor:not-allowed;
+}

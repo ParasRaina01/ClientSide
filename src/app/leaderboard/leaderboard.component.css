@@ -1,0 +1,71 @@
+table {
+  width: 100%;
+}
+.header
+{
+  text-align: center;
+  border: 20px;
+  background-color: rgb(16, 42, 192);
+  width: 400px;
+  border-radius: 20px;
+  margin-left: 400px;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.header-top{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+/* .select-course{
+  /* margin-top: 40px; */
+  /* padding-top: 90px; */
+ */
+.heading{
+  font-weight: 500;
+  height: 30px;
+  border-radius: 20px;
+}
+.header-top
+{
+  /* background-color: rgb(243, 189, 189); */
+  margin-bottom: 20px;
+}
+
+h1{
+  font-weight: 600;
+  /* background-color: aqua; */
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* margin-top: 40px; */
+}
+h2{
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 36px;
+  border-width: 20px;
+  border: 2px solid rgb(19, 81, 214);
+  background-color: rgb(69, 69, 241);
+  border-radius: 10px;
+  color: white;
+  box-shadow: inset;
+}
+.mat-elevation-z8{
+  background-color:rgb(171, 171, 243);
+  border-radius: 200px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px; /* adjust this value to fit your needs */
+  /* margin-bottom: 20px; */
+}
+img {
+  max-width: 100%;
+  max-height: 400%;
+}

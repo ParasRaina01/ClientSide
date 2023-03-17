@@ -1,0 +1,64 @@
+.loginbutton {
+  margin-top: 5px;
+}
+.container {
+  border: none;
+  /* padding:40px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 500px;
+  margin-left: 4rem;
+  transform: translate(-50%, -50%);
+}
+.text-center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* border: 2px solid red; */
+  align-items: left;
+  background-color: white;
+  border-radius: 20px;
+  padding-bottom: 2px;
+  margin-top: 10px;
+  /* display: flex; */
+  flex-direction: row;
+}
+.example-container {
+  /* height: 50%;
+    width: 20%; */
+  text-align: left;
+}
+.d-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mat-form-field {
+  width: 100%;
+}
+.mt-top {
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.mt-top button {
+  background-color: blue;
+  color: white;
+}
+.mt-top-2 {
+  margin-top: 15px;
+}
+.btn1 {
+  border-radius: 20px;
+  width: 110px;
+  background: rgb(64, 61, 235);
+  text-align: center;
+  color: white;
+  align-items: center;
+  margin-top: 5px;
+  justify-content: space-around;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}

@@ -1,0 +1,21 @@
+.container{
+    margin-top: 120px;
+}
+
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    font-weight: 800px;
+    /* padding-bottom: 40px; */
+
+}
+
+.leaderboard{
+    padding-top: 60px;
+    padding-bottom: 200px;
+    color: white;
+    font-size: x-large;
+}
+.score{
+  font-weight: 800;
+}

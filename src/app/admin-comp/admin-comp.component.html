@@ -1,0 +1,33 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button>
+      <mat-icon (click)="sidenav.toggle();">menu</mat-icon>
+    </button>
+    <h1>Admin Dashboard</h1>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav opened="true" role="navigation ">
+    <mat-nav-list>
+      <a mat-list-item [routerLink]="['/leaderBoard']">LeaderBoard</a>
+      <a mat-list-item [routerLink]="['/registerAdmin']">Add Admin</a>
+      <a mat-list-item [routerLink]="['/usersList']">See Users</a>
+      <a mat-list-item [routerLink]="['/addQuestion']">add Question</a>
+      <a mat-list-item [routerLink]="['/uploadQuestion']">upload Question</a>
+      <a mat-list-item>
+        <button class="btn" (click)="buttonWork()">Log Out</button>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div style="height:88vh;">
+    <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- <div class="d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary">
+    Vertical Navbar 
+    <app-sidebar></app-sidebar>
+    <app-dashboard></app-dashboard>
+  </div> -->

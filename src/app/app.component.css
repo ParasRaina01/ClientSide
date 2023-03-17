@@ -1,0 +1,36 @@
+/* .body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+} */
+.mat-toolbar mat-toolbar-single-row
+{
+  display: flex;
+  justify-content: space-between;
+}
+.mat-toolbar-row, .mat-toolbar-single-row {
+  display: flex;
+  box-sizing: border-box;
+  padding: 5px 20px;
+  /* padding-bottom: 5px; */
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+}
+/* .button {
+  background-color: blue;
+  color: white;
+} */
+.heading{
+  margin-left: -24px;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}

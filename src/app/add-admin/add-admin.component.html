@@ -1,0 +1,80 @@
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+  
+        <mat-card class="innerContainer">
+          <mat-card-title class="text-center">
+            <h1 class="text-center">Create New Admin</h1>
+          </mat-card-title>
+          <!-- <mat-card-title class="text-center">Register Here</mat-card-title> -->
+          <form [formGroup]="addAdminForm" (ngSubmit)="onSubmit()">
+            <div class="row">
+              <mat-form-field class="">
+                <input formControlName="userName" matInput="" placeholder="Full Name">
+                <mat-error *ngIf="addAdminForm.get('userName').errors?.['required']">
+                  Full name is required
+                </mat-error>
+              </mat-form-field>
+            </div>
+            <div class="row">
+              <mat-form-field>
+                <input type="email" id="email" formControlName="userEmail" placeholder="Email" matInput="">
+                <mat-error *ngIf="addAdminForm.get('userEmail').touched ||
+                addAdminForm.get('userEmail').errors?.['pattern']">
+                  Please enter a valid email</mat-error>
+                <mat-error *ngIf="registrationError" class="text-center">This email already exists</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="row">
+              <mat-form-field>
+                <input type="text" matInput="" formControlName="userPhoneNo" placeholder="Mobile Number">
+                <mat-error *ngIf="addAdminForm.get('userPhoneNo').errors?.['required']">
+                  Phone Number is required
+                </mat-error>
+              </mat-form-field>
+            </div>
+            <div class="row">
+              <mat-form-field>
+                <input type="password" matInput="" placeholder="Password" formControlName="userPassword" minlength="6">
+                <mat-error>
+  
+                </mat-error>
+              </mat-form-field>
+            </div>
+            <div class="row">
+              <mat-label>Select DOB</mat-label>
+              <mat-form-field>
+                <input formControlName="dob" matInput [matDatepicker]="picker">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+            </div>
+            <div class="row">
+              <mat-form-field>
+                <mat-select class="sec" formControlName="question">
+                  <mat-option value="" class="">Choose a security question</mat-option>
+                  <mat-option *ngFor="let Question of questions" [value]="Question">{{Question}}</mat-option>
+                </mat-select>
+              </mat-form-field>
+              <mat-form-field>
+                <textarea type="text" matInput="" formControlName="answer" placeholder="Enter your answer"
+                  class="answer"></textarea>
+              </mat-form-field>
+            </div>
+            <div class="footer">
+              <div class="btnReg">
+                <button [disabled]="!addAdminForm.valid" type="submit" class="btn1 btn-primary">Register</button>
+              </div>
+              <div class="text-center1">
+                <p>Already have an account <a [routerLink]="['/login']">Login</a></p>
+              </div>
+            </div>
+  
+  
+          </form>
+        </mat-card>
+  
+  
+      </div>
+    </div>
+  
